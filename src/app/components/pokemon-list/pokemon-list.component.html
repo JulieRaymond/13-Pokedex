@@ -1,5 +1,7 @@
-<h2>Listes de tous les Pokémons</h2>
-<div *ngFor="let pokemon of pokemons" (click)="selectPokemon(pokemon)">
-  <img [src]="pokemon.picture" alt="{{ pokemon.name }}">
-  <p>{{ pokemon.name }}</p>
+<div class="pokemon-list">
+  <h2>Listes de tous les Pokémons</h2>
+  <div *ngFor="let pokemon of pokemons" class="pokemon-card fade-in" (click)="selectPokemon(pokemon)">
+    <img [src]="pokemon.picture" alt="{{ pokemon.name }}">
+    <p>{{ pokemon.name }}</p>
+  </div>
 </div>

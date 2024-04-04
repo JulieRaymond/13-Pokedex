@@ -1,6 +1,8 @@
-<h2>Pokémon sélectionné</h2>
-<div *ngIf="pokemon">
-  <img [src]="pokemon.picture" alt="{{ pokemon.name }}">
-  <p>{{ pokemon.name }}</p>
-  <p>{{ pokemon.description }}</p>
+<div class="pokemon-detail fade-in" *ngIf="pokemon">
+  <h2>Pokémon sélectionné</h2>
+  <div>
+    <img [src]="pokemon.picture" alt="{{ pokemon.name }}">
+    <p>{{ pokemon.name }}</p>
+    <p>{{ pokemon.description }}</p>
+  </div>
 </div>
