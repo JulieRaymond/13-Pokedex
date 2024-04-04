@@ -3,13 +3,16 @@ import {Pokemon} from "../../shared/pokemon";
 import {PokedexService} from "../../services/pokedex.service";
 import {PokemonListComponent} from "../../components/pokemon-list/pokemon-list.component";
 import {PokemonDetailComponent} from "../../components/pokemon-detail/pokemon-detail.component";
+import {RouterLink, RouterOutlet} from "@angular/router";
 
 @Component({
   selector: 'app-pokemon-page',
   standalone: true,
   imports: [
     PokemonListComponent,
-    PokemonDetailComponent
+    PokemonDetailComponent,
+    RouterLink,
+    RouterOutlet
   ],
   templateUrl: './pokemon-page.component.html',
   styleUrl: './pokemon-page.component.scss'

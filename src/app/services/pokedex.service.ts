@@ -12,14 +12,11 @@ export class PokedexService {
 
   constructor() {
   }
-
-  // Méthode pour récupérer la liste des Pokemons
   getPokemons(): Observable<Pokemon[]> {
-    return of(POKEMONS); // Retourne un Observable contenant les Pokemons mock
+    return of(this.pokemons);
   }
-
-  // Méthode pour ajouter un nouveau Pokemon
   addPokemon(pokemon: Pokemon): void {
+    console.log("Adding new pokemon:", pokemon);
     this.pokemons.push(pokemon);
   }
 }
