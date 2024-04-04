@@ -1,0 +1,4 @@
+<div *ngFor="let pokemon of pokemons" (click)="selectPokemon(pokemon)">
+  <img [src]="pokemon.picture" alt="{{ pokemon.name }}">
+  <p>{{ pokemon.name }}</p>
+</div>
